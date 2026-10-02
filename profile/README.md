@@ -1,11 +1,11 @@
 <p align="center">
   <picture>
     <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/yhatlabs/.github/main/profile/logos/logo-on-dark.png">
-    <img alt="Y-Hat Labs" src="https://raw.githubusercontent.com/yhatlabs/.github/main/profile/logos/logo-on-light.png" width="280">
+    <img alt="YHat Labs" src="https://raw.githubusercontent.com/yhatlabs/.github/main/profile/logos/logo-on-light.png" width="280">
   </picture>
 </p>
 
-Y-Hat Labs builds foundation models for time series and tabular data, and systems that forecast real-world events. Our models are served through a hosted API; this organization holds the benchmark records and the code that reproduces them.
+YHat Labs builds foundation models for time series and tabular data, and systems that forecast real-world events. Our models are served through a hosted API; this organization holds the benchmark records and the code that reproduces them.
 
 - 🌐 [Website](https://yhatlabs.com)
 - 🔑 [Get API access](https://yhatlabs.com)
