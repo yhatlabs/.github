@@ -16,9 +16,9 @@ YHat Labs builds foundation AI models for tabular data: ChakraTS forecasts any t
 
 | Model | Data | What it does | Availability |
 |---|---|---|---|
-| [ChakraTS](https://huggingface.co/yhatlabs/ChakraTS) | time series | zero-shot probabilistic forecasting: nine quantiles per step, known-future covariates, any regular frequency | API, commercial |
-| [ChakraTS-Lab](https://huggingface.co/yhatlabs/ChakraTS-Lab) | time series | research configuration of ChakraTS, used for benchmark entries | evaluation on request |
-| [ChakraTab](https://huggingface.co/yhatlabs/ChakraTab) | tables | classification and regression with class probabilities | API, commercial |
+| [ChakraTS](https://huggingface.co/yhatlabs/ChakraTS) | Time series | Zero-shot probabilistic forecasting: nine quantiles per step, known-future covariates, any regular frequency | API, commercial |
+| [ChakraTS-Lab](https://huggingface.co/yhatlabs/ChakraTS-Lab) | Time series | Research configuration of ChakraTS, used for benchmark entries | evaluation on request |
+| [ChakraTab](https://huggingface.co/yhatlabs/ChakraTab) | Tabular | Classification and regression with class probabilities | API, commercial |
 
 ## Benchmarks
 
