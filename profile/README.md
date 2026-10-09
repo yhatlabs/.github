@@ -28,7 +28,7 @@ We evaluate on the public leaderboards under their official protocols and publis
 |---|---|---|
 | [fev-bench](https://huggingface.co/spaces/autogluon/fev-bench) | ChakraTS | 1st by win rate, 2nd by skill score |
 | [TIME](https://huggingface.co/spaces/Real-TSF/TIME-leaderboard) | ChakraTS | 2nd of 31 |
-| [GIFT-Eval](https://huggingface.co/spaces/Salesforce/GIFT-Eval) | ChakraTS | 3rd overall (under review) |
+| [GIFT-Eval](https://huggingface.co/spaces/Salesforce/GIFT-Eval) | ChakraTS | 3rd among non-agentic models |
 | [TabArena](https://tabarena.ai) | ChakraTab | top 5 (under review) |
 
 Result files and reproduction notebooks: [yhatlabs/yhatlabs](https://github.com/yhatlabs/yhatlabs). Benchmark data is never used for anything other than scoring.
