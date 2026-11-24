@@ -5,34 +5,65 @@
   </picture>
 </p>
 
-YHat Labs builds foundation AI models for tabular data: ChakraTS forecasts any time series and ChakraTab predicts on any table, pretrained, one API call, no training or tuning. We also build systems that forecast real-world events. This organization holds the benchmark records and the code that reproduces them.
+<h3 align="center">AI made for prediction and forecasting.</h3>
 
-- 🌐 [Models and results](https://yhatlabs.com/models)
-- 🔑 [Request API access](https://yhatlabs.com/models/access)
-- 🤗 [Model cards on Hugging Face](https://huggingface.co/yhatlabs)
-- 📊 [Benchmark results and reproduction notebooks](https://github.com/yhatlabs/yhatlabs)
+<p align="center">
+YHat Labs builds foundation models for tabular and time-series data. They are pretrained like LLMs, but take structured
+data as an input and return predicted values, with no training or tuning.
+</p>
 
-## The Chakra model family
+<p align="center">
+  <a href="https://yhatlabs.com"><b>Website</b></a> ·
+  <a href="https://yhatlabs.com/models/docs"><b>Docs</b></a> ·
+  <a href="https://yhatlabs.com/models/signup"><b>Get started</b></a> ·
+  <a href="https://huggingface.co/yhatlabs"><b>Hugging Face</b></a>
+</p>
 
-| Model | Data | What it does | Availability |
-|---|---|---|---|
-| [ChakraTS](https://huggingface.co/yhatlabs/ChakraTS) | Time series | Zero-shot probabilistic forecasting: nine quantiles per step, known-future covariates, any regular frequency | API, commercial |
-| [ChakraTS-Lab](https://huggingface.co/yhatlabs/ChakraTS-Lab) | Time series | Research configuration of ChakraTS, used for benchmark entries | evaluation on request |
-| [ChakraTab](https://huggingface.co/yhatlabs/ChakraTab) | Tabular | Classification and regression with class probabilities | API, commercial |
+## Our models
 
-## Benchmarks
+**Hosted:** through our API, for production and commercial use.
 
-We evaluate on the public leaderboards under their official protocols and publish the result files and the notebooks that regenerate them. Standing as of October 2026:
-
-| Benchmark | Model | Standing |
+| Model | Data | What it does |
 |---|---|---|
-| [fev-bench](https://huggingface.co/spaces/autogluon/fev-bench) | ChakraTS | 1st by win rate, 2nd by skill score |
-| [TIME](https://huggingface.co/spaces/Real-TSF/TIME-leaderboard) | ChakraTS | 2nd of 31 |
-| [GIFT-Eval](https://huggingface.co/spaces/Salesforce/GIFT-Eval) | ChakraTS | 3rd among non-agentic models |
-| [TabArena](https://tabarena.ai) | ChakraTab | top 5 (under review) |
+| [ChakraTS](https://huggingface.co/yhatlabs/ChakraTS) | Time series | Forecasting, our most accurate model |
+| [ChakraTab](https://huggingface.co/yhatlabs/ChakraTab) | Tables | Prediction: classification and regression |
 
-Result files and reproduction notebooks: [yhatlabs/yhatlabs](https://github.com/yhatlabs/yhatlabs). Benchmark data is never used for anything other than scoring.
+**Open source:** download the weights and run them on your own machine.
 
-## Contact
+| Model | Data | What it does |
+|---|---|---|
+| [ChakraTS-OS-10M](https://huggingface.co/yhatlabs/ChakraTS-OS-10M) | Time series | Best-in-class forecasting under 100M parameters, fast on a laptop CPU |
 
-[founders@yhatlabs.com](mailto:founders@yhatlabs.com)
+## Repositories
+
+<table>
+  <tr>
+    <td width="33%" valign="top">
+      <h4><a href="https://github.com/yhatlabs/yhatlabs-python">yhatlabs-python</a></h4>
+      <p>The Python library for our hosted models: forecasts, predictions on tables, backtests and fine-tuning.</p>
+      <p><code>pip install yhatlabs</code></p>
+      <a href="https://pypi.org/project/yhatlabs/"><img alt="PyPI" src="https://img.shields.io/pypi/v/yhatlabs?label=pypi&color=6b5e4b"></a>
+      <a href="https://pepy.tech/projects/yhatlabs"><img alt="Downloads" src="https://img.shields.io/pepy/dt/yhatlabs?label=downloads&color=6b5e4b"></a>
+    </td>
+    <td width="33%" valign="top">
+      <h4><a href="https://github.com/yhatlabs/yhatmodels">yhatmodels</a></h4>
+      <p>Run our open models on your own machine, with no API key. Your data never leaves your computer.</p>
+      <p><code>pip install yhatmodels</code></p>
+      <a href="https://pypi.org/project/yhatmodels/"><img alt="PyPI" src="https://img.shields.io/pypi/v/yhatmodels?label=pypi&color=6b5e4b"></a>
+      <a href="https://pepy.tech/projects/yhatmodels"><img alt="Downloads" src="https://img.shields.io/pepy/dt/yhatmodels?label=downloads&color=6b5e4b"></a>
+    </td>
+    <td width="33%" valign="top">
+      <h4><a href="https://github.com/yhatlabs/yhatlabs-cookbook">yhatlabs-cookbook</a></h4>
+      <p>Notebooks on real data, from loading it to a scored result, and our benchmark results with the code to reproduce them.</p>
+      <p><a href="https://github.com/yhatlabs/yhatlabs-cookbook">Browse the recipes</a></p>
+    </td>
+  </tr>
+</table>
+
+<p align="center">
+  <a href="https://www.linkedin.com/company/yhat-labs"><img alt="Follow us on LinkedIn" src="https://img.shields.io/badge/Follow%20us%20on%20LinkedIn-0A66C2?logo=data%3Aimage%2Fsvg%2Bxml%3Bbase64%2CPHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAyNCAyNCI%2BPHBhdGggZmlsbD0id2hpdGUiIGQ9Ik0yMC40NDcgMjAuNDUyaC0zLjU1NHYtNS41NjljMC0xLjMyOC0uMDI3LTMuMDM3LTEuODUyLTMuMDM3LTEuODUzIDAtMi4xMzYgMS40NDUtMi4xMzYgMi45Mzl2NS42NjdIOS4zNTFWOWgzLjQxNHYxLjU2MWguMDQ2Yy40NzctLjkgMS42MzctMS44NSAzLjM3LTEuODUgMy42MDEgMCA0LjI2NyAyLjM3IDQuMjY3IDUuNDU1djYuMjg2ek01LjMzNyA3LjQzM2MtMS4xNDQgMC0yLjA2My0uOTI2LTIuMDYzLTIuMDY1IDAtMS4xMzguOTItMi4wNjMgMi4wNjMtMi4wNjMgMS4xNCAwIDIuMDY0LjkyNSAyLjA2NCAyLjA2MyAwIDEuMTM5LS45MjUgMi4wNjUtMi4wNjQgMi4wNjV6bTEuNzgyIDEzLjAxOUgzLjU1NVY5aDMuNTY0djExLjQ1MnpNMjIuMjI1IDBIMS43NzFDLjc5MiAwIDAgLjc3NCAwIDEuNzI5djIwLjU0MkMwIDIzLjIyNy43OTIgMjQgMS43NzEgMjRoMjAuNDUxQzIzLjIgMjQgMjQgMjMuMjI3IDI0IDIyLjI3MVYxLjcyOUMyNCAuNzc0IDIzLjIgMCAyMi4yMjIgMGguMDAzeiIvPjwvc3ZnPg%3D%3D"></a>
+  <a href="https://huggingface.co/yhatlabs"><img alt="Follow us on Hugging Face" src="https://img.shields.io/badge/Follow%20us%20on%20Hugging%20Face-FFD21E?logo=huggingface&logoColor=000000"></a>
+  <a href="https://x.com/yhatlabs"><img alt="Follow us on X" src="https://img.shields.io/badge/Follow%20us%20on%20X-000000?logo=x&logoColor=white"></a>
+  <br>
+  <a href="mailto:founders@yhatlabs.com"><img alt="Email us" src="https://img.shields.io/badge/Email%20us-founders%40yhatlabs.com-6b5e4b"></a>
+</p>
