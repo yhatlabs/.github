@@ -8,8 +8,8 @@
 <h3 align="center">AI made for prediction and forecasting.</h3>
 
 <p align="center">
-YHat Labs builds foundation models for tabular and time-series data. They are pretrained like LLMs, but take structured
-data as an input and return predicted values, with no training or tuning.
+YHat Labs builds foundation models for tabular and time-series data. Get accurate predictions and forecasts with no
+training required on your data.
 </p>
 
 <p align="center">
